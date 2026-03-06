@@ -6,12 +6,10 @@ document
     if (!c.target.classList.contains("submit")) {
       return;
     }
-    
     c.preventDefault();
     let emailInp = document.getElementById("inpEmail");
     let passInp = document.getElementById("inpPass");
     let reEnterPass = document.getElementById("inpRePass");
-
     if (
       emailInp.value.trim() === "" ||
       passInp.value.trim() === "" ||
@@ -25,7 +23,6 @@ document
       alert(`Mật khẩu không giống nhau, nhập lại`);
       return;
     }
-
     let account = {
       email: emailInp.value,
       password: passInp.value,
